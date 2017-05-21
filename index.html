@@ -7,7 +7,43 @@
   <title>Mentality</title>
   <script src="https://unpkg.com/vue"></script>
   <script type="text/javascript" src="/js/main.js"></script>
-  <link rel = "stylesheet" type = "text/css" href = "/css/bootstrap.min.css" />
+  <link rel = "stylesheet" type = "text/css" href = "css/bootstrap.min.css" />
+<style>
+.navbar{
+  margin-bottom:0;
+  border-radius:0;
+}
+
+#solution .flex-container{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+#solution .item{
+  margin-bottom: 20px;
+}
+#solution .item img{
+  margin: 50px;
+}
+#solution .item span{
+  font-weight: bold;
+  display: block;
+  font-size: 26px;
+ text-align: justify;
+}
+
+h1 {
+  font-size: 48px;
+  align-content: center;
+  display:inline;
+}
+img {
+  vertical-align: top;
+  border-radius: 5px 20px;
+  margin-right: 5px;
+}
+
+</style>
 </head>
 <body>
   <nav class="navbar navbar-inverse">
@@ -36,7 +72,10 @@
     </nav>
   <div class="jumbotron text-center">
     <div class="container">
-      <h1>Mentality</h1>
+
+<div><img src="resources\imgs\logo.png" alt="logo"/><h1>Mentality</h1>
+</div>
+<br>
       <p>
         wellness platform for collegiate student athletes
       </p>
@@ -48,8 +87,58 @@
       <button class="btn btn-primary">Register</button>
     </div>
   </div>
-  <p>
-    Hello World!
-  </p>
+
+<h2 style align="center">How it Works</h2>
+
+<div class="content">
+  <div id="solution">
+        <div class="flex-container">
+          <div class="item">
+            <img src="resources\imgs\survey.png">
+            <span>Pulse Surveys</span>
+          </div>
+
+          <div class="item">
+            <img src="resources\imgs\tools.png">
+            <span>Resource Library</span>
+          </div>
+
+          <div class="item">
+            <img src="resources\imgs\consulting.png">
+            <span>Consulting</span>
+          </div>
+  </div>
+
+  <div class="jumbotron text-center">
+        <div class="container">
+          <h2>Impact</h2>
+        </div>
+      </div>
+
+      <div id="impact">
+            <div class="flex-container">
+              <div class="item">
+                <img src="resources\imgs\brain.png">
+                <span>Mental Health</span>
+              </div>
+
+              <div class="flex-container">
+                <div class="item">
+                  <img src="resources\imgs\athlete.png">
+                  <span>Physical Health</span>
+                </div>
+
+                <div class="flex-container">
+                  <div class="item">
+                    <img src="resources\imgs\academic.png">
+                    <span>Academics</span>
+                  </div>
+
+                  <div class="flex-container">
+                    <div class="item">
+                      <img src="resources\imgs\social.png">
+                      <span>Social Health</span>
+                    </div>
+
 </body>
 </html>
